@@ -1,0 +1,127 @@
+/*===========================================================*/
+/*	--Buttons
+/*===========================================================*/
+.button, .page-nav a {
+	cursor: pointer;
+	position: relative;
+	background: transparent;
+	outline: transparent;
+	border: 1px solid $SecondaryColor;
+	display: inline-block;
+	padding: 7px 20px;
+	box-shadow: none;
+
+	&:hover {
+		outline: 0;
+		background: $mainColor;
+		border: 1px solid $mainColor;
+	}
+
+	i {
+		margin-right: 10px;
+	}
+
+}
+
+/*===========================================================*/
+/*  Accordion
+/*===========================================================*/
+
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border: none;
+}
+
+.panel {
+	border: none;
+	box-shadow: none;
+}
+
+.panel-group .panel {
+	border-radius: 0;
+}
+
+
+.panel-default>.panel-heading {
+	transition: .25s;
+	border: 1px solid #ddd;
+	// border-bottom: none;
+	border-radius: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.panel-default:last-child>.panel-heading {
+	// border-bottom: 1px solid #ddd;
+}
+
+.panel-group .panel+.panel {
+
+	margin-top: 0;
+	border-top: 0;
+
+	.panel-heading {
+		border-top: transparent;
+	}
+}
+
+
+.panel-title a {
+	display: block;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.panel-heading.active {
+	background-color: $mainColor;
+	border-color: $mainColor;
+
+	a {
+		color: #fff;
+	}
+}
+
+.panel-collapse {
+	border: 1px solid #ddd;
+	border-top: transparent;
+}
+
+/*===========================================================*/
+/*  Tabs
+/*===========================================================*/
+
+.nav-tabs {
+	border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs > li > a {
+	border-radius: 0;
+	margin-right: 0;
+}
+
+.nav-tabs>li>a:hover {
+	border-color:  #f7f7f7 #f7f7f7 #ddd;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color:  #f7f7f7;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	background-color: #feed71;
+	border: 1px solid #feed71;
+	cursor: pointer;
+	color: #fff;
+}
+
+.tab-content {
+	padding: 30px 20px;
+}
+
+/*===========================================================*/
+/*	Blockquote
+/*===========================================================*/
+
+blockquote {
+	border-color: $mainColor;
+}
