@@ -55,18 +55,7 @@ global $redux_data;
 				<h2><?php echo get_bloginfo('description'); ?></h2>
 			</div>
 
-			<?php
-			if ( has_nav_menu('sidebar-menu') ) { ?>
-				<nav id="nav-container" class="collapse navbar-collapse">
-					<?php
-					wp_nav_menu( array(
-						'theme_location'  => 'sidebar-menu',
-						'menu_class'      => 'sf-menu'
-					));
-				?>
-				</nav>
-			<?php } ?>
-
+			<!-- Anteriormente nav-container -->
 
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-container">
 				<span class="sr-only">Toggle navigation</span>
@@ -80,6 +69,19 @@ global $redux_data;
 			<?php endif; ?>
 
 			<?php do_action('icl_language_selector'); ?>
+
+			<!-- nav-container -->
+			<?php
+			if ( has_nav_menu('sidebar-menu') ) { ?>
+				<nav id="nav-container" class="collapse navbar-collapse">
+					<?php
+					wp_nav_menu( array(
+						'theme_location'  => 'sidebar-menu',
+						'menu_class'      => 'sf-menu'
+					));
+				?>
+				</nav>
+			<?php } ?>
 
 			<div class="social-container">
 				<?php if( !empty( $redux_data['facebook']) ) : ?>
