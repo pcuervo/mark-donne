@@ -376,8 +376,8 @@ ul ul {
   text-align: center; }
 
 .logo-title {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 2.25em;
+  line-height: 2.25em;
   padding: 0 20px;
   margin: 0;
   text-transform: uppercase;
@@ -1316,7 +1316,9 @@ iframe, iframe.no-border {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; }
+    bottom: 0; 
+    background-position: 50% 20% !important;
+    background-size: 100% !important;}
 
 .row-contacts {
   margin-bottom: 60px; }
