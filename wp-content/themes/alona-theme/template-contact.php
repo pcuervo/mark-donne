@@ -36,7 +36,7 @@ if(isset($_POST['submitted'])) {
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-<div class="half-width full-height hidden-xs contact-media-container">
+<div class="half-width full-height hidden contact-media-container">
 	<?php if ( get_field('left_column') == 'image' ) : ?>
 		<?php
 		$image = get_field('image');
@@ -123,7 +123,7 @@ if(isset($_POST['submitted'])) {
 							</div>
 						</li>
 
-						<li class="buttons">
+						<li class="buttons text-right">
 							<input type="hidden" name="submitted" id="submitted" value="true" />
 							<button type="submit" class="button"><?php _e('Send Email', 'subsolar'); ?></button>
 						</li>
